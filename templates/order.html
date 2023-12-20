@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+{% include 'header.html' %}
+    <main class="ord-main">
+        <div class="org">
+            <div class="frm-box">
+                <h1 class="frm-txt">ثبت سفارش پنجره</h1>
+                <form class="frm-1" action="{{ url_for('done') }}" method="post" autocomplete="off">
+                    <label class="frm-lbl" for="name">نام و نام خانوادگی:</label>
+                    <input class="frm-inp" type="text" id="name" name="name" required>
+                    <label class="frm-lbl" for="name">شماره تلفن:</label>
+                    <input class="frm-inp" type="text" id="num" name="num" required>
+                    <div class="frm-btn-box"><button class="frm-btn" type="submit">ثبت سفارش</button></div>
+                </form>
+            </div>
+            <div class="frm-img-box">
+
+            </div>
+        </div>
+    </main>
+{% include 'footer.html' %}
+{% endblock %}
